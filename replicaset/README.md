@@ -29,7 +29,7 @@ kubectl exec -ti nginx-replicaset-[search through kubectl get pods] /bin/sh
 exit
 ```
 
-although we delete one of pods, replicaset supervise it and recreate another pod to keep 3 replicas.
+Although we delete one of pods, replicaset supervises it and recreates another pod to keep 3 replicas.
 ```
 kubectl delete pod nginx-replicaset-[one of pods]
 kubectl get pods --show-labels
@@ -84,7 +84,7 @@ pod/nginx-replicaset-t9ppf   1/1     Running   0          32m     app=nginx-repl
 pod/nginx-replicaset-xg7pr   1/1     Running   0          32m     app=nginx-replicaset
 ```
 
-delete all pods. 
+Delete all pods. 
 ```
 kubectl delete -f replicaset-nginx.yaml
 kubectl delete pod nginx-replicaset-994ss
