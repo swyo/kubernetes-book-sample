@@ -1,5 +1,9 @@
 # Deployment
 
+> Prerequisite: 
+> * what is pod? see `/pod`
+> * what is controller/replicaset? see `/replicaset`
+
 Deployment is a basic controller, which is used to deploy stateless applications in Kubernetes.
 
 Deployment can control replicatset and operations like deploy, rollback and so on.
