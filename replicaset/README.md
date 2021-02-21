@@ -3,7 +3,7 @@
 `replicaset` supervises
 `spec.selector.matchLabels` and `spec.templdate.metadata.labels` should be matched.
 
-```vim
+```shell
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
